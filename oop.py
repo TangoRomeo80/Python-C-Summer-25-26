@@ -123,3 +123,91 @@
 # print(f"Displacement: {c1.get_displacement()}L")
 # print(c1.__model) # Invalid
 
+# Inheritance describes an "Is a" relationship between classes. 
+# It allows a class to inherit properties and methods from another class.
+# class Flyer:
+#     def fly(self):
+#         print("I believe I can fly!")
+
+# class Swimmer:
+#     def swim(self):
+#         print("I can swim!")
+
+# # Crow is a Flyer
+# class Crow(Flyer):
+#     def caw(self):
+#         print("Caw Caw!")
+
+# # Penguine is a Swimmer
+# class Penguine(Swimmer):
+#     def waddle(self):
+#         print("Waddle Waddle!")
+
+# # Pankouri is a Flyer and a Swimmer (Example of multiple inheritance)
+# class Pankouri(Flyer, Swimmer):
+#     def quack(self):
+#         print("Quack Quack!")
+
+# # c = Crow()
+# # c.caw()
+# # c.fly()
+
+# # p = Penguine()
+# # p.waddle()
+# # p.swim()
+
+# pk = Pankouri()
+# pk.fly()
+# pk.swim()
+# pk.quack()
+
+# Polymorphism means a single method can behave differently based on the object that is calling it.
+# class Teacher:
+#     def work(self):
+#         print("I am teaching!")
+
+# class Student:
+#     def work(self):
+#         print("I am studying!")
+
+# class Engineer:
+#     def work(self):
+#         print("I am designing!")
+
+# class Doctor:
+#     def work(self):
+#         print("I am treating patients!")
+
+# workers = [Teacher(), Student(), Engineer(), Doctor()]
+# for worker in workers:
+#     worker.work()
+
+# from typing import override
+# class Worker:
+#     def work(self):
+#         raise NotImplementedError("Subclasses must implement this method")
+
+# class Teacher(Worker):
+#     pass
+#     # @override
+#     # def work(self):
+#     #     print("I am teaching!")
+
+# class Student(Worker):
+#     @override
+#     def work(self):
+#         print("I am studying!")
+
+# class Engineer(Worker):
+#     @override
+#     def work(self):
+#         print("I am designing!")
+
+# class Doctor(Worker):
+#     @override
+#     def work(self):
+#         print("I am treating patients!")
+
+# workers = [Teacher(), Student(), Engineer(), Doctor()]
+# for worker in workers:
+#     worker.work()
