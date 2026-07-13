@@ -70,3 +70,56 @@
 # supra = ToyotaCar("Supra", "Red", 2, "Petrol", 3.0)
 # supra.display_info()
 
+# Encapsulation means restricting external access without any control
+# In java, default access modifier is private, which means it is only accessible in the same class.
+# In python, default access modifier is public, which means it is accessible from anywhere.
+# class Car:
+#     def __init__(self, model: str, color: str, doors: int, engine_type: str, displacement: float):
+#         # __ means private access modifier, which means it is only accessible in the same class.
+#         # _ means protected access modifier, which means it is accessible in the same class and subclasses.
+#         self.__model = model
+#         self.__color = color
+#         self.__doors = doors
+#         self.__engine_type = engine_type
+#         self.__displacement = displacement
+
+#     # We implement getter and setter methods to access private variables from outside the class. 
+#     # This ensure abstraction and encapsulation of the class by hiding the internal implementation details and restricting direct access.
+#     def get_model(self):
+#         return self.__model
+
+#     def set_model(self, model: str):
+#         self.__model = model
+
+#     def get_color(self):
+#         return self.__color
+
+#     def set_color(self, color: str):
+#         self.__color = color
+
+#     def get_doors(self):
+#         return self.__doors
+
+#     def set_doors(self, doors: int):
+#         self.__doors = doors
+
+#     def get_engine_type(self):
+#         return self.__engine_type
+
+#     def set_engine_type(self, engine_type: str):
+#         self.__engine_type = engine_type
+
+#     def get_displacement(self):
+#         return self.__displacement
+
+#     def set_displacement(self, displacement: float):
+#         self.__displacement = displacement
+
+# c1 = Car("Premio", "Silver", 4, "Petrol", 2.0)
+# print(f"Model: {c1.get_model()}")
+# print(f"Color: {c1.get_color()}")
+# print(f"Doors: {c1.get_doors()}")
+# print(f"Engine Type: {c1.get_engine_type()}")
+# print(f"Displacement: {c1.get_displacement()}L")
+# print(c1.__model) # Invalid
+
